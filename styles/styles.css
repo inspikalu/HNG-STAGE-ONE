@@ -1,0 +1,96 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+[data-testid="slack-info"] {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 20px;
+}
+
+[data-testid="slack-info"]>h2 {
+    grid-column: span 2;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+    grid-row: span 2;
+}
+
+.displayName,
+.email {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.displayName>span,
+.email>span {
+    font-weight: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+[data-testid="current-info"]{
+    height: 100%;
+}
+.goals{
+    margin: 20px auto;
+}
+.goals h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.goals ul {
+    list-style: none;
+    padding: 0;
+}
+
+.goals li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    list-style-image: url("checked.png");
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
